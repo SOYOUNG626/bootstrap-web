@@ -19,18 +19,42 @@ a {
 
 .lines {
   position: absolute;
-  top: 100%;
+  bottom: 50px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   z-index: 10;
   color: white;
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+  }
+}
+
 .title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 3%;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+}
+
+.carousel-link {
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: underline;
+}
+
+.carousel-link:hover {
+  color: white;
 }
 
 .card-padding {
