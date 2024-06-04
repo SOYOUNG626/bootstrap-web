@@ -1,0 +1,52 @@
+a {
+  color: black;
+}
+
+.nav-link {
+  color: black;
+}
+
+.btn-outline-success {
+  color: gray;
+  border-color: gray;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: gray;
+  border-color: gray;
+}
+
+.lines {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.card-padding {
+  padding: 48px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.first-line {
+  border-bottom: 1px solid #392d23;
+}
+
+.second-line a {
+  color: white;
+  text-decoration: none;
+}
