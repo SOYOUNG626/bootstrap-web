@@ -27,38 +27,73 @@ a {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.5rem;
-  }
-
-  .sub-title {
-    font-size: 1rem;
-  }
-}
-
 .title {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 3%;
+  text-size-adjust: none;
 }
 
 .sub-title {
   font-size: 1.5rem;
+  text-size-adjust: none;
 }
 
 .carousel-link {
   font-size: 0.8rem;
   color: white;
   text-decoration: underline;
+  text-size-adjust: none;
 }
 
 .carousel-link:hover {
   color: white;
 }
 
+@media screen and (max-width: 470px) {
+  .title {
+    font-size: 1rem;
+  }
+  .sub-title {
+    font-size: 0.8rem;
+  }
+  .carousel-link {
+    font-size: 0.6rem;
+  }
+}
+
 .card-padding {
   padding: 48px;
+}
+
+.card-title {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.card-img-top {
+  background-color: floralwhite;
+}
+
+.card {
+  overflow: hidden;
+  cursor: pointer;
+}
+.card > img {
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 2.5rem 1rem;
+}
+
+.zoom-in > img:hover {
+  transform: scale(1.1);
+}
+
+.card-animation:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
 footer {
@@ -73,4 +108,30 @@ footer {
 .second-line a {
   color: white;
   text-decoration: none;
+}
+
+.third-line {
+  display: none;
+}
+
+@media screen and (max-width: 48rem) {
+  .first-line {
+    text-align: center;
+  }
+
+  .second-line {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid #392d23;
+  }
+  .mobile-padding {
+    padding-bottom: 1.5rem;
+  }
+
+  .third-line {
+    display: block;
+  }
+  .card {
+    margin-bottom: 25px;
+  }
 }
